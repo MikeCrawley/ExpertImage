@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" type="text/css" href='expimg.css' />
+
+<link rel="stylesheet" type="text/css" href="jcarousel.basic.css">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Expert Image</title>
+  <meta name="description" content="">
+  <meta name="author" content="Expert Image">
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+</head>
+<body>
+	<!-- // <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js?ver=1.4.0"> -->
+
+
+
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.jcarousel.js"></script>
+<script type="text/javascript" src="jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="jcarousel.basic.js"></script>
+
+
+<script>
+
+window.onload = function() {
+// alert( "welcome" );
+var titles = document.getElementsByName('titlelist');
+
+document.getElementById('testButton').onclick = function() {
+document.getElementById('xyz').style.color = 'red';
+}
+document.getElementById('TheDoors').onclick = function() {
+document.getElementById('playing').src="thedoors.mp4";
+}
+document.getElementById('Ode').onclick = function() {
+document.getElementById('playing').src="ode.mp4";
+}
+document.getElementById('Pta').onclick = function() {
+document.getElementById('playing').src="pta.mp4";
+}
+document.getElementById('Nak').onclick = function() {
+document.getElementById('playing').src="nakuru.mp4";
+}
+
+// if (titles[0].value == 0){
+// document.getElementById('playing').src="thedoors.mp4";
+
+
+
+// };
+
+$(document).ready(function() {
+// all jQuery code goes here
+});
+$(function() {
+    $('.jcarousel').jcarousel({
+        // Configuration goes here
+    });
+});
+$('.jcarousel-prev').click(function() {
+    $('.jcarousel').jcarousel('scroll', '-=1');
+});
+
+$('.jcarousel-next').click(function() {
+    $('.jcarousel').jcarousel('scroll', '+=1');
+});
+
+
+// alert( "welcome" );
+};
+
+// $("div"); // selects all HTML div elements
+// $("#myElement"); // selects one HTML element with ID "myElement"
+// $(".myClass"); // selects HTML elements with class "myClass"
+//  ("p#myElement"); // selects HTML paragraph element with ID "myElement"
+// $("ul li a.navigation");
+// $(":animated"); // selects elements currently being animated
+// selects anchors with class "navigation" that are nested in list items
+// $("#myElement").css("color", "blue") // makes text color blue on element #myElement
+
+
+</script>
+
+
+<h1 class="title">Expert Image</h1>
+		
+
+<div id="centerframe">
+<div id="player">
+<video id="playing" width="600" height="480" autoplay controls >
+</video>
+</div>
+</div>
+
+<div class="wrapper">
+            <p class="todo">To use, select desired video to preview.
+      </p>
+<div class="jcarousel-wrapper">
+<div class="jcarousel">
+    <ul>
+        <li><input type="image" id="TheDoors" name="titlelist" src="thedoors.png" width="500" height="320"></li>
+        <li><input type="image" id="Ode" name="titlelist" src="ode.png" width="500" height="320"></li>
+        <li><input type="image" id="Pta" name="titlelist" src="pta.png" width="500" height="320"></li>
+        <li><input type="image" id="Nak" name="titlelist" src="nak.png" width="500" height="320"></li>
+                        
+    </ul>
+</div>
+
+<a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+<a href="#" class="jcarousel-control-next">&rsaquo;</a>
+       
+<p class="jcarousel-pagination">
+</p>
+</div>
+</div>
+
+<!-- <video src="c:\ip2\TheDoors.mp4" width="480" autoplay controls loop>
+</video>
+-->
+<button type="button" id="testButton">Click Me</button>
+<button type="button" id="xyz">Click Me</button>
+<button type="button" id="play">play Doors</button>
+
+
+</body>
+
