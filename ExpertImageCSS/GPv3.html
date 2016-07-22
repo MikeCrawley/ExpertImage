@@ -30,7 +30,7 @@
 <div id = "mainwrapper">
 
 <div id = "header">
-      <img src = "headerimages/goldName.png">
+      <img src = "headerimages\goldName.png"  >
   
   
   <!--<div id = "headertext">
@@ -60,17 +60,14 @@
   </div>
   <div id="centerframe">
   <div id="player">
-  <video id="playing" width="600" height="480" autoplay controls >
+  <video id="playing" width="700" height="560" autoplay controls >
   </video>
   </div>
-
-
-
   </div>
 
 
   <div class="wrapper">
-            <p class="todo">To use, select desired video to preview.</p>
+            
   <div class="jcarousel-wrapper">
   <div class="jcarousel">
     <ul>
@@ -81,7 +78,8 @@
         <li><input type="image" id="whi" name="titlelist" src="video\thewhitehouse.png" width="500" height="320"></li>
                         
     </ul>
-  </div>
+    <!--<p class="todo">To use, select desired video to preview.</p>  -->
+   </div>
 
   <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
   <a href="#" class="jcarousel-control-next">&rsaquo;</a>
@@ -94,12 +92,7 @@
   <!-- <video src="c:\ip2\TheDoors.mp4" width="480" autoplay controls loop>
   </video>
   -->
-  <button type="button" id="testButton">Click Me</button>
-  <button type="button" id="xyz">Click Me</button>
-  <button type="button" id="play">play Doors</button>
-
-
-
+ 
   <script>
 
 
@@ -114,9 +107,9 @@ sessionStorage['runtime'] = "50 Seconds";
 // alert( "welcome" );
 var titles = document.getElementsByName('titlelist');
 
-document.getElementById('testButton').onclick = function() {
-document.getElementById('xyz').style.color = 'red';
-}
+// document.getElementById('testButton').onclick = function() {
+// document.getElementById('xyz').style.color = 'red';
+// }
 document.getElementById('expert').onclick = function() {
 document.getElementById('playing').src="video/PROMO.mp4";
 $('#rightframe').html('We are Expert Image.  We offer the highest quality stock video footage' + '</br>' + '</br>' + '</br>' + '<a href="he.html?pur=promo" id="promo" > Click here to order</a>');

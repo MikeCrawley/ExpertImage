@@ -113,7 +113,7 @@ html {
 }*/
 
 #maincontent {
-	margin-top: 26px;
+	margin-top: 10px;
 	margin-right: 10px;
 	margin-left: 10px;
 	width: 97.9166667%; /* 940 divided by 960 */
@@ -164,7 +164,7 @@ have a fixed width and height (but it's not required).
     background-color: AC9399;    /*background-color: #E6E6E6;*/
 }
 
-#centerframe {border-radius: 5px;
+#centerframe {border-radius: 1px;
 	border: 2px solid #6495ED;
 	background-color: #AC9399;
 	/*background: linear-gradient(#DDD1E7, #EEE8F3);
@@ -173,12 +173,22 @@ have a fixed width and height (but it's not required).
 	background: -o-linear-gradient(#E0EEEE, #2F4F4F);*/
 	height: 500px;
 	width: 760px;
+	margin-top: 5px;
 	margin: auto;
 	Font-size:22px;
 	Font-family:times;
 	text-align: center;
 	float:center;
-	padding:5px;
+	padding:1px;
+}
+
+#playing {
+	
+	margin-top: -45px;
+	
+	text-align: center;
+	float:center;
+	padding:1px;
 }
 
 
