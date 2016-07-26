@@ -18,6 +18,8 @@
 
   <meta name="viewport" content="width=device-width; initial-scale=1.0">
 
+
+
 </head>
 <body>
 	<!-- // <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js?ver=1.4.0"> -->
@@ -30,14 +32,41 @@
 <div id = "mainwrapper">
 
 <div id = "header">
-      <img src = "headerimages\goldName.png"  >
-  
+
+      <img src = "headerimages\goldName6.png" class="active" />
+      <img src = "headerimages\blackName3.png" />
+      <img src = "headerimages\aluminumName2.png" />
   
   <!--<div id = "headertext">
     <h1>Let us change your life!<br>Words words words</h1>
     </div>-->
 
 </div>
+
+<script>
+  
+function slideSwitch() {
+    var $active = $('#header img.active');
+
+    if ( $active.length == 0 ) $active = $('#header img:last');
+
+    var $next =  $active.next().length ? $active.next()
+        : $('#header img:first');
+
+    $active.addClass('last-active');
+        
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 5000 );
+});
+
+</script>
 
 <div id = "nav">
 
