@@ -75,25 +75,24 @@ $(function() {
 
 
   <ul id = "nav_links">
-    <li><a href="index.jsp">Home</a></li>
+    <li><a href="index.html">Home</a></li>
     <li><a href = "testimony.html">Testimonials</a></li>
     <li><a href = "blog.html">Blog</a></li>
-    <li><a href = "contactus.html">Contact Us</a></li>
-    <li><a href= "aboutus.html">About Us</a></li>
+    <li><a href = "contactus.html">Contact</a></li>
+    <li><a href= "aboutus.html">About</a></li>
   </ul>
 
 </div>
 
-<script>
+<script type="text/javascript">
   
   $(document).ready(function(){
-  $("nav_button").click(function(){
+  $("#nav_button").click(function(){
     show_nav();
   });
 });
 
-function show_nav()
-{
+function show_nav() {
 $('#nav_links').animate({width:'toggle'},350);
 }
 </script>
