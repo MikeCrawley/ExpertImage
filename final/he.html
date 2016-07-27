@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+
+ <head>
+ <meta http-equiv="Content-Language" content="en-us">
+ <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+ <title>Acme Widgets&nbsp; - Get Your Widgets Here!</title>
+ </head>
+
+ <body>
+<script src="jquery.js"></script>
+<script type="text/javascript" src="jquery.jcarousel.js"></script>
+<script type="text/javascript" src="jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="jcarousel.basic.js"></script>
+
+
+
+ <h2>Expert Image order form</h2>
+ 
+   <form action="submit" method="GET">
+
+   <input id="order" value=""><br/>
+   <input id="runtime" value=""><br/>
+   <input id="price" value=""><br>
+   <input type="hidden" name="codice" value="${item.key.codice}">
+
+  <button>submit</button>
+
+
+</form>
+
+
+ <p>Thank you for selecting from our footage.  Please visit again soon</p>
+ <p>&nbsp;</p>
+ <p>If you have questions or difficulties with this order page, please contact 
+ our Customer Service Department (see our Contacts page.)</p>
+
+<script>
+window.onload = function() {
+// var item = document.getElementById('order').innerHTML; 
+// console.log(item);
+// console.log("hi");
+//console.log(item.val);
+
+var mike = sessionStorage['mike'];
+document.getElementById('order').value=mike;
+var runtime = sessionStorage['runtime'];
+document.getElementById('runtime').value=runtime;
+var price = sessionStorage['price'];
+document.getElementById('price').value=price;
+
+
+
+
+
+console.log(mike);
+ }
+</script>
+
+
+
+ </body>
+
+ </html>
