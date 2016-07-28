@@ -211,6 +211,10 @@ html {
 	/*box-shadow: 0 0 10px 5px #000;*/
 }
 
+#maincontent2 p {
+	font-size: 30px;
+}
+
 /*
 This is the visible area of you carousel.
 Set a width here to define how much items are visible.
