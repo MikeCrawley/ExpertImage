@@ -88,48 +88,9 @@ $('#nav_links').animate({width:'toggle'},350);
 
 <div id = "maincontent2">
 
- <h2>Expert Image order form</h2>
+ <h2>Testimonies</h2>
  
-   <form action="submit" method="GET">
-
-   <input id="order" value=""><br/>
-   <input id="runtime" value=""><br/>
-   <input id="price" value=""><br>
-   <input type="hidden" name="codice" value="${item.key.codice}">
-
-  <button>submit</button>
-
-
-</form>
-
-
- <p>Thank you for selecting from our footage.  Please visit again soon</p>
- <p>&nbsp;</p>
- <p>If you have questions or difficulties with this order page, please contact 
- our Customer Service Department (see our <span><a href = "contactus.html">Contacts</a></span> page.)</p>
-
-<script>
-window.onload = function() {
-// var item = document.getElementById('order').innerHTML; 
-// console.log(item);
-// console.log("hi");
-//console.log(item.val);
-
-var mike = sessionStorage['mike'];
-document.getElementById('order').value=mike;
-var runtime = sessionStorage['runtime'];
-document.getElementById('runtime').value=runtime;
-var price = sessionStorage['price'];
-document.getElementById('price').value=price;
-
-
-
-
-
-console.log(mike);
- }
-</script>
-
+   
 </div>
 <div id = "footer">
   <div id = "footertext">
